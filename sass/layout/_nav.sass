@@ -1,0 +1,22 @@
+.main-nav
+  background: $accent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  font-size: 1.2rem
+  ul
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100vh
+  li
+    flex: 1 1 auto
+    &:not(:last-of-type)
+      border-bottom: 1px solid rgba(0, 0, 0, .15)
+    display: flex
+    align-items: center
+    justify-content: center
+  a
+    color: $text-inverse
+    text-decoration: none
