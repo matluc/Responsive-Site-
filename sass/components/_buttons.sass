@@ -3,18 +3,20 @@
   padding: .75em 2.5em
   text-transform: uppercase
   text-decoration: none
+  border-radius: 8px
   &:not(:last-of-type)
     margin-bottom: .6em
 
-.btn-primary
+.btn--primary
   background: $accent
   color: $text-inverse
   border: 2px solid $accent
   &:hover,
   &:focus
     background: darken($accent, 15%)
+    border: darken($accent, 15%)
 
-.btn-secondary
+.btn--secondary
   border: 2px solid $text-inverse
   color: $text-inverse
   &:hover,
