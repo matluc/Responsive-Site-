@@ -48,8 +48,14 @@
         background: none
         color: darken($accent, 15%)
 
+  .active a
+    color: $dark
+    @media (min-width: 725px)
+      color: $accent
+
   &.is-open
     left: 0
+
 
 // Hamburger menu
 
@@ -85,17 +91,15 @@
   &::before
     opacity: 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //
+.scrollToTop
+  background: url("../img/to-top.png") no-repeat
+  background-size: cover
+  position: fixed
+  z-index: 2
+  opacity: .5
+  right: .75rem
+  bottom: .75rem
+  height: 5vw
+  width: 5vw
+  &:hover, &:focus
+    opacity: 1
