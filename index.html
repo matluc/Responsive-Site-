@@ -19,22 +19,20 @@
     <div class="container grid">
 
       <div class="logo">
-        <img src="img/logo.svg" alt="Appilicous logo"></div>
+        <img src="img/logo.svg" alt="Company logo">
+      </div>
 
       <nav class="main-nav">
         <ul class="unstyled-list">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
+          <li class="active"><a class="scroll" href="#home">Home</a></li>
+          <li><a class="scroll"href="#about">About</a></li>
+          <li><a class="scroll"href="#trial">Try it out</a></li>
+          <li><a class="scroll"href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-toggle">
-        <div class="hamburger">
-
-        </div>
+        <div class="hamburger"></div>
       </div>
 
     </div>
@@ -42,13 +40,13 @@
 
   <!-- ======  Hero area  ====== -->
 
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="container grid">
       <div class="hero-text col col--2-3">
-        <h1 class="title-large"><span>Take your app to the</span> next level</h1>
+        <h1 class="title-large"><span>Take your app to the </span>next level</h1>
         <p class="text-intro">The perfect landing page for your app, whatever it might be. Show off apps features, show some sexy pictures and get more people do download it today.</p>
-        <a href="" class="btn btn--secondary">Learn more</a>
-        <a href="" class="btn btn--primary">Get the app</a>
+        <a href="#" class="btn btn--secondary">Learn more</a>
+        <a href="#" class="btn btn--primary">Get the app</a>
       </div>
 
       <div class="col col--1-3">
@@ -60,24 +58,24 @@
 
   <!-- ======  Sales points  ====== -->
 
-  <section class="sales-points">
+  <section class="sales-points" id="about">
     <div class="container grid">
       <h2 class="col col--full">Promote your app</h2>
 
       <div class="sales-point col col--1-3">
-        <img src="img/sales-responsive.png" alt="">
+        <img src="img/sales-responsive.png" aria-hidden="true">
         <h3>Responsive Design</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
       </div>
 
       <div class="sales-point col col--1-3">
-        <img src="img/sales-hand.png" alt="">
+        <img src="img/sales-hand.png" aria-hidden="true">
         <h3>Easy to Set up</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
       </div>
 
       <div class="sales-point col col--1-3">
-        <img src="img/sales-graph.png" alt="">
+        <img src="img/sales-graph.png" aria-hidden="true">
         <h3>Great results</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit posuere finibus. Phasellus nibh lorem, cursus eu justo in, bibendum rutrum diam.</p>
       </div>
@@ -109,17 +107,17 @@
 
   <!-- ======  Call to action  ====== -->
 
-  <section class="cta">
+  <section class="cta" id="trial">
     <div class="container container--cta">
       <p class="text-large">You made it to the bottom and you still aren't sure?</p>
-      <h2 class="title-large">Showcase the greatness today</h2>
-      <a href="" class="btn btn--primary">Get the app</a>
+      <h2 class="title-large">Start with 14-day free trial</h2>
+      <a href="#" class="btn btn--primary">Start a trial</a>
     </div>
   </section>
 
   <!-- ======  Footer  ====== -->
 
-  <footer>
+  <footer id="contact">
     <div class="container container--footer">
       <p class="title-footer">Take your app to the next level</p>
       <ul class="unstyled-list social-links">
@@ -146,19 +144,23 @@
       </ul>
 
       <ul class="unstyled-list nav-footer">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a class="scroll" href="#home">Home</a></li>
+        <li><a class="scroll" href="#about">About</a></li>
+        <li><a class="scroll" href="#trial">Try it out</a></li>
+        <li><a class="scroll" href="#contact">Contact</a></li>
       </ul>
     </div>
   </footer>
 
+  <!-- <div class="scrollToTop"></div> -->
+  <a href="#" class="scrollToTop"></a>
+
+
   <!-- ======  jQuerry  ====== -->
   <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
   <!-- ======  Font awesome  ====== -->

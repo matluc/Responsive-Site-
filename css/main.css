@@ -738,6 +738,16 @@ h3 {
   }
 }
 
+.main-nav .active a {
+  color: #444;
+}
+
+@media (min-width: 725px) {
+  .main-nav .active a {
+    color: #d31869;
+  }
+}
+
 .main-nav.is-open {
   left: 0;
 }
@@ -796,12 +806,39 @@ h3 {
   opacity: 0;
 }
 
+.scrollToTop {
+  background: url("../img/to-top.png") no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 2;
+  opacity: .5;
+  right: .75rem;
+  bottom: .75rem;
+  height: 5vw;
+  width: 5vw;
+}
+
+.scrollToTop:hover, .scrollToTop:focus {
+  opacity: 1;
+}
+
 .main-header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding-top: 1em;
+}
+
+@media (min-width: 725px) {
+  .main-header {
+    position: fixed;
+    background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db93));
+    background: -webkit-linear-gradient(left, #048ca8, #16db93);
+    background: -o-linear-gradient(left, #048ca8, #16db93);
+    background: linear-gradient(to right, #048ca8, #16db93);
+    z-index: 2;
+  }
 }
 
 .logo {
@@ -896,7 +933,7 @@ h3 {
 
 @media (min-width: 725px) {
   .cta {
-    padding: 10em 0;
+    padding: 12em 0;
   }
   .cta::before, .cta::after {
     content: '';
@@ -1008,7 +1045,7 @@ footer a {
 
 .btn--primary:hover, .btn--primary:focus {
   background: #8e1047;
-  border: #8e1047;
+  border: 2px solid #8e1047;
 }
 
 .btn--secondary {
